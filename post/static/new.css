@@ -1,0 +1,58 @@
+#post-form{
+    margin:0 100px;
+}
+
+.input-container{
+    width:100%;
+    margin-top:25px;
+    font-family: 'Gaegu', cursive;
+    font-size:2rem;
+}
+
+.image{
+    margin-top:10px;
+    font-family: 'Gaegu', cursive;
+    font-size:1.4rem;
+}
+
+.post-label{
+    display:block;
+    margin-bottom:5px;
+    font-size:2.2rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#post-title{
+    display:block;
+    width:100%;
+    height:30px;
+    font-family: 'Gaegu', cursive;
+    font-size:1.4rem;
+}
+
+#post-body{
+    display:block;  
+    width:100%;
+    font-size:1.4rem;
+    font-family: 'Gaegu', cursive;
+}
+
+.post-submit{
+    display:block;
+    margin:0 auto;
+    padding: 8px 13px;
+    font-size: 1.4rem;
+    background-color:#5858FA;
+    border:none;
+    color:white;
+    border-radius:5px;
+    font-family: 'Permanent Marker', cursive;
+    cursor:pointer;
+}
+
+.post-submit:hover{
+    background-color:white;
+    color:#0B0B61;
+    transition:background-color 0.2s;
+    border:2px solid #5858FA;
+}

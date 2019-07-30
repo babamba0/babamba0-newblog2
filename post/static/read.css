@@ -1,0 +1,137 @@
+.post-detail-container {
+  margin: 0 250px;
+}
+
+.post-read-header {
+  border-bottom: 1px solid #111;
+  padding: 20px 0;
+  font-family: 'Gaegu', cursive;
+  font-size:30px;
+}
+
+.post-read-header div {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  margin-top: 8px;
+  font-size: 1.5rem;
+  
+}
+
+.post-read-action a {
+  margin-left: 8px;
+  font-size:25px;
+}
+
+.post-read-action button {
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  /* font-size: inherit; */
+  cursor: pointer;
+  margin-left: 8px;
+  
+}
+
+/* #post-delete {
+  display: none;
+  font-size:27px;
+} */
+
+.change{
+font-family: 'Permanent Marker', cursive;
+/* font-size:27px; */
+}
+
+.change:hover{
+  background-color:white;
+  color:#0B0B61;
+  transition:background-color 0.2s;
+  
+  text-decoration: underline;
+}
+
+.delete{
+  display:block;
+  margin:0 auto;
+  padding: 8px 13px;
+  /* font-size: 1.4rem; */
+  /* background-color:#5858FA; */
+  border:2px solid #5858FA;
+  color:black;
+  border-radius:5px;
+  cursor:pointer;
+font-family: 'Permanent Marker', cursive;
+font-size:27px;
+
+}
+
+.delete:hover{
+  background-color:white;
+  color:#0B0B61;
+  transition:background-color 0.2s;
+  
+  text-decoration: underline;
+}
+
+
+.post-read-body {
+  padding: 50px 0;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #111;
+  font-family: 'Gaegu', cursive;
+  white-space: pre-line;
+  font-size:23px;
+}
+
+.post-read-end {
+  padding: 50px 0;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #111;
+}
+
+.post-read-img img {
+  max-height: 600px;
+  max-width: 600px;
+}
+
+#comment-form textarea {
+  padding: 15px;
+  width: 200%;
+  white-space: pre-line;
+}
+
+.c-input-container {
+  margin-bottom: 15px;
+}
+
+.c-input-container input {
+  padding: 15px;
+  width: 100px;
+  height: 40px;
+}
+
+.c-pub-date {
+  text-align: center;
+  color: #666;
+  font-size: 4rem;
+}
+
+.comment-submit {
+  display: block;
+  float: right;
+  padding: 8px 13px;
+  font-size: 2rem;
+  background-color: coral;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.comment-submit:hover {
+  background-color: white;
+  color: coral;
+  transition: background-color 0.2s;
+  border: 2px solid coral;
+  padding: 6px 11px;
+}

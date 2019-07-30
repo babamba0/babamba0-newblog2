@@ -1,0 +1,39 @@
+.post-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 3px dashed rgb(221, 221, 221);
+    padding: 30px 0px;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 0px 7em;
+    font-family: 'Gaegu', cursive;
+    
+}
+
+.post-title {
+    display: block;
+    font-weight: bold;
+    font-size: 2.3rem;
+    font-family: 'Gaegu', cursive;
+}
+
+.post-body {
+    float: left;
+    overflow: hidden;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #666;
+    white-space: pre-line;
+}
+
+.post-items-img {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.post-img img {
+    max-width: 300px;
+    max-height: 300px;
+}

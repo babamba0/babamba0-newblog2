@@ -1,0 +1,32 @@
+dli{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="post-detail-container">
+  <div class="post-read-header">
+    <h2>{{ post.title }}</h2>
+    <div>
+      <span>{{ post.pub_date }}</span>
+      <div class="post-read-action">
+        <form action="{% url 'delete' post.id %}" id="post-delete" method="post">
+          {% csrf_token %}
+        </form>
+        <a class="change" href="{% url 'renew' post.id %}">Change</a>
+        <button type="submit" class="delete" form="post-delete">Delete</button>
+      </div>
+    </div>
+  </div>
+  <div class="post-read-body">
+    <p>{{ post.body }}</p>
+  </div>
+  <div class="post-read-end">
+    <span class="post-read-img">
+      {% if post.image %}
+      <img src="{{ post.image.url }}" alt="">
+      {% else %}
+      <img src="{% static 'no-image.png' %}" alt="">
+      {% endif %}
+    </span>
+  </div>
+</div> 
+{% endblock %}

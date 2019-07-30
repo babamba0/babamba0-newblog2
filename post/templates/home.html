@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block css_content %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock  %}
+
+{% block content %}
+{% for post in posts %}
+<a href="{% url 'read' post.id %}">
+    <div class="post-items">
+        <div class="post-items-body">
+            <span class="post-title">{{ post.title }}</span>
+            <span class="post-body">{{ post.body }}</span>
+        </div>
+        <div class="post-items-img">
+            <span class="post-img">
+                {% if post.image %}
+                <img src="{{ post.image.url }}" alt="">
+                {% else %} 
+                <img src="{% static 'no-image.png' %}" alt="">
+                {% endif %}
+            </span>
+        </div>
+    </div>
+</a>
+{% endfor %} 
+{% endblock %}
